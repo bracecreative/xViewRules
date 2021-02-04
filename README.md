@@ -14,7 +14,7 @@ xViewRules('id', 5)->toJSON();
 //    "combinator":"and"
 // } 
 
-xViewRules('id', 5)->and('name', 'George')->and('age', 20, '$gt')->toJSON();
+xViewRules('id', 5)->and('name', 'George')->and('age', 20, '$gt')->toBase64();
 
 // eyJydWxlcyI6W3siZmllbGQiOiJpZCIsInZhbHVlIjo1LCJvcGVyYXRvciI6IiRlIn0seyJmaWVsZCI6Im5hbWUiLCJ2YWx1ZSI6Ikdlb3JnZSIsIm9wZXJhdG9yIjoiJGUifSx7ImZpZWxkIjoiYWdlIiwidmFsdWUiOjIwLCJvcGVyYXRvciI6IiRndCJ9XSwiY29tYmluYXRvciI6ImFuZCJ9
 
