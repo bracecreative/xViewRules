@@ -54,11 +54,3 @@ class xViewRules{
 function xViewRules($field, $value, $operator = '$e', $combinator = 'and'){
     return new xViewRules($field, $value, $operator, $combinator);
 }
-
-var_dump(xViewRules('id', 5)->toJSON());
-
-var_dump(xViewRules('id', 5)->and('name', 'George')->and('age', 20, '$gt')->toJSON());
-
-var_dump(xViewRules('id', 5)->or(xViewRules('firstName', 'George')->and('lastName', 'Batt'))->toJSON());
-
-var_dump(xViewRules('id', 5)->and(xViewRules('firstName', 'George')->or('lastName', 'Batt'))->toJSON());
